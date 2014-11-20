@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey">
+
+        <FrameLayout
+            android:id="@+id/context_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_overlay"
+            android:paddingTop="15dp"
+            android:paddingBottom="@dimen/padding_small">
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/padding_medium"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium" >
+
+                <TextView
+                    android:id="@+id/user_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/blue"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="welcome to"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+        
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/context_bar"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/picture_center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+           	android:alpha="0.03"
+           	android:scaleType="fitCenter"
+            android:src="@drawable/box_bud_big" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/username_field"
+            android:layout_alignLeft="@+id/pass_field"
+            android:layout_centerHorizontal="true"
+            android:text="Please Sign In:"
+            android:textColor="@color/blue" />
+
+        <ProgressBar
+            android:id="@+id/reg_loading_home"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/locallogin_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pass_field"
+            android:layout_below="@+id/pass_field"
+            android:onClick="loginLocal"
+            android:text="Sign in" />
+
+        <TextView
+            android:id="@+id/new_user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locallogin_butt"
+            android:layout_centerHorizontal="true"
+            android:text="New User?"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/signup_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_user_text"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up" />
+
+        <EditText
+            android:id="@+id/pass_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username_field"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/username_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pass_field"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

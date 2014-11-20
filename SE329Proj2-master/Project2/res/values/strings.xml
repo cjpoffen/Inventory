@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inventory Pal</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+
+	<!--  Switch String Values -->
+	<string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+
+	<!--  Menu Strings -->
+    <string name="go_back">Go Back</string>
+    <string name="back">Back</string>
+    <string name="clear">Clear</string>
+    <string name="search">Search</string>
+	<string name="info">Info</string>
+	<string name="locations">Locations</string>
+	<string name="information">Information</string>
+    <string name="logout">Logout</string>
+    <string name="export">Export CSV</string>
+    <string name="goBack">Go Back</string>
+    
+
+</resources>

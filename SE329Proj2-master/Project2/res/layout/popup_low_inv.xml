@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="30dp" >
+        
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:id="@+id/popup_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/faint_grey"
+                android:focusable="false"
+                android:orientation="vertical"
+                android:padding="5dp" >
+                
+                <RelativeLayout
+                    android:id="@+id/header_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" >
+
+                    <TextView
+                        android:id="@+id/title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="Items with low inventory:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/title_textview"
+                        android:background="@color/blue" >
+                    </FrameLayout>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/item_name_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/header_layout">
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_quantity_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/item_name_layout">
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout01"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_weight_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/item_quantity_layout" >
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout05"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/item_descr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_weight_layout" >
+
+                    <TextView
+                        android:id="@+id/low_inv_items"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="#AA000000" />
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout02"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_pic_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_descr_layout" >
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout04"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+
+                </RelativeLayout>
+                
+                
+                <RelativeLayout
+                    android:id="@+id/bottom_options_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_pic_layout" >
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout08"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/gray" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/okay_button"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/cancel_butt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/FrameLayout08"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="Okay"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+        
+
+        
+    </RelativeLayout>
+</RelativeLayout>

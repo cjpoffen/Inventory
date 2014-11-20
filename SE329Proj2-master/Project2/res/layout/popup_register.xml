@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="30dp" >
+        
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:id="@+id/popup_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/faint_grey"
+                android:focusable="false"
+                android:orientation="vertical"
+                android:padding="5dp" >
+                
+                <RelativeLayout
+                    android:id="@+id/header_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <TextView
+                        android:id="@+id/item_name_textview"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="Username:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#AA000000" />
+
+                    <EditText
+                        android:id="@+id/reg_name_field"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/item_name_textview"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:hint="Username"
+                        android:inputType="textPersonName" 
+                        android:textColor="#000000"/>
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/reg_name_field"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_quantity_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/header_layout">
+
+                    <TextView
+                        android:id="@+id/item_weight_text"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="Password:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#AA000000" />
+
+                    <EditText
+                        android:id="@+id/reg_pass_field"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/item_weight_text"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:hint="Password"
+                        android:inputType="textPassword" 
+                        android:textColor="#000000" />
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout01"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/reg_pass_field"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_descr_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_quantity_layout" >
+
+                    <EditText
+                        android:id="@+id/reg_pass2_field"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/item_descr_text"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:hint="Password"
+                        android:inputType="textPassword" 
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/item_descr_text"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/reg_pass2_field"
+                        android:layout_alignBottom="@+id/reg_pass2_field"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Confirm:"
+                        android:textColor="#AA000000" />
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout02"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/reg_pass2_field"
+                        android:background="@color/faint_grey" >
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_options_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_descr_layout" >
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout08"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/gray" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/cancel_butt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/FrameLayout08"
+                        android:layout_toRightOf="@+id/FrameLayout07"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="Cancel"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/okay_butt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/cancel_butt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/FrameLayout08"
+                        android:layout_toLeftOf="@+id/FrameLayout07"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:textStyle="bold"
+                        android:text="Register"
+                        android:textColor="@color/blue" />
+
+                    <FrameLayout
+                        android:id="@+id/FrameLayout07"
+                        android:layout_width="3px"
+                        android:layout_height="30dp"
+                        android:layout_alignBottom="@+id/cancel_butt"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/gray" >
+                    </FrameLayout>
+                </RelativeLayout>
+                
+                <ProgressBar
+                    android:id="@+id/reg_loading"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </ScrollView>
+        
+
+        
+    </RelativeLayout>
+</RelativeLayout>

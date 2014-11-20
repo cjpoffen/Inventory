@@ -1,0 +1,20 @@
+<resources>
+    
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="list_item_height_med">70dp</dimen>
+    <dimen name="list_item_height_large">90dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="app_defaultsize_w">632.0dip</dimen>
+	<dimen name="app_defaultsize_h">598.0dip</dimen>
+	<dimen name="app_minimumsize_w">632.0dip</dimen>
+	<dimen name="app_minimumsize_h">598.0dip</dimen>
+	
+	<dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+</resources>

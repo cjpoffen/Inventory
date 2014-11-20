@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FFA71930</color>
+    <color name="faint_red">#E09E9E</color>
+    <color name="gray">#999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="faint_grey">#EFEFEF</color>
+    <color name="dark_grey">#FF151515</color>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#AA000000</color>
+    <color name="selection">#55000000</color>
+    <color name="photostream_overlay">#88000000</color>
+    <color name="overlay">#88FFFFFF</color>
+    <color name="dark_overlay">#BB000000</color>
+    <color name="blue">#FF33b5e5</color>
+</resources>
